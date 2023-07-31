@@ -1,6 +1,6 @@
-# README
 
-![doom-native-php.png](public/assets/doom-native-php.png)
+
+<p align="center"><img src="public/assets/doom-native-php.png" width="300px" height="200px" /></p>
 
 ## About DOOM native PHP
 

@@ -1,0 +1,17 @@
+{
+    "compilerOptions" : {
+        "target" : "esnext",
+        "module" : "esnext",
+        "moduleResolution" : "node",
+        "isolatedModules" : true,
+        "strict" : true,
+        "types": [ "vite/client" ],
+        "importHelpers" : true,
+        "removeComments" : true,
+        "skipLibCheck" : true,
+        "strictNullChecks" : true,
+        "paths" : { "~/*" : [ "./resources/ts/*" ], "@/*" : [ "./*" ] }
+    },
+    "include" : [ "resources/ts/**/*", "storage/**/*" ],
+    "exclude" : [ "node_modules/**/*", "vendor/**/*" ]
+}

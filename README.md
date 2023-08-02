@@ -1,6 +1,6 @@
-# README
 
-![doom-native-php.png](public/assets/doom-native-php.png)
+
+<p align="center"><img src="public/assets/doom-native-php.png" width="300px" height="200px" /></p>
 
 ## About DOOM native PHP
 
@@ -20,6 +20,7 @@ It was possible before, but now it is easy. It took me a day.
 git clone https://github.com/Itemshopp/doom-native-php.git
 ```
 
+
 2. Install dependencies
 
 ```bash
@@ -27,18 +28,30 @@ composer install
 npm install
 ```
 
-3. Serve on electron
+
+3. Copy .env.example and generate key
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+``
+
+
+4. Serve on electron
 
 ```bash
 npm run dev [ open new terminal window ]
 php artisan native:serve [ open new terminal window ]
 ```
 
-4. Kill some Cacodemon
+
+5. Kill some Cacodemon
 
 ## Suggestions
 
-- Add more games [ Prince of Persia ]
+- Add more games [ Prince of Persia, The secret of Monkey Island ]
 - Change project name to PHP-DOS
 
 Don’t hesitate to give us some feed backs and suggestions to improve the project on the github repository or on twitter : [Capsules Codes](https://twitter.com/capsulescodes)

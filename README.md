@@ -14,10 +14,12 @@ It was possible before, but now it is easy. It took me a day.
 
 ## Installation
 
-1. Clone the repository on your local environment
+1. Clone the repository on your local environment and go through directory
 
 ```bash
 git clone https://github.com/Itemshopp/doom-native-php.git
+
+cd doom-native-php
 ```
 
 
@@ -35,8 +37,6 @@ npm install
 cp .env.example .env
 php artisan key:generate
 ```
-
-``
 
 
 4. Serve on electron

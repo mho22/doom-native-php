@@ -17,7 +17,7 @@ It was possible before, but now it is easy. It took me a day.
 1. Clone the repository on your local environment and go through directory
 
 ```bash
-git clone https://github.com/Itemshopp/doom-native-php.git
+git clone https://github.com/mho22/doom-native-php.git
 
 cd doom-native-php
 ```

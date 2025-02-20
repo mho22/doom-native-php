@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\GameController;
+use Inertia\Inertia;
 
 
-Route::get( '/', [ GameController::class, 'show' ] )->name( 'game' );
+Route::get( '/', fn() => Inertia::render( 'Game', [ 'title' => 'doom' ] ) )->name( 'game' );

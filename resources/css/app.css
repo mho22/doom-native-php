@@ -1,6 +1,18 @@
-@import '../../public/jsdos/js-dos.css';
+@import '../../node_modules/js-dos/dist/js-dos.css';
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+
+@source '../../resources';
+
+
+.sidebar
+{
+    @apply !hidden;
+}
+
+.w-12
+{
+    @apply !w-0;
+}

@@ -1,34 +1,18 @@
 <script setup lang="ts">
 
 import { onMounted } from 'vue';
-import type { DosPlayerOptions, DosPlayerFactoryType } from '@/public/jsdos/types/src/player';
-import '@/public/jsdos/js-dos';
+import "js-dos/dist/js-dos";
 
-declare const Dos : DosPlayerFactoryType;
 
-onMounted( () =>
-{
-    emulators.pathPrefix = 'jsdos/';
+declare global { interface Window { Dos : any } }
 
-    const root : HTMLDivElement = document.getElementById( 'jsdos' ) as HTMLDivElement;
-    const options : DosPlayerOptions = { style : 'hidden', noSideBar : true };
 
-    Dos( root, options ).run( 'https://cdn.dos.zone/custom/dos/doom.jsdos' );
-});
+onMounted( () => window.Dos( document.getElementById( 'jsdos' ), { url : 'https://cdn.dos.zone/custom/dos/doom.jsdos', theme : 'dark', autoStart : true } ) );
 
 </script>
 
 <template>
 
-    <div id="jsdos" class="w-screen h-screen" />
+    <div class="w-screen h-screen" ><div id="jsdos" /></div>
 
 </template>
-
-<style>
-
-.flex-grow-0
-{
-    @apply hidden;
-}
-
-</style>

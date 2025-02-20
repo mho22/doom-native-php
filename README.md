@@ -42,8 +42,8 @@ php artisan key:generate
 4. Serve on electron
 
 ```bash
-npm run dev [ open new terminal window ]
-php artisan native:serve [ open new terminal window ]
+npm run dev
+php artisan native:serve
 ```
 
 

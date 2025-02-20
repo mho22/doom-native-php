@@ -1,47 +1,26 @@
 {
-    "name": "capsules/codes",
+    "name": "capsules-codes/doom-native-php",
     "type": "project",
-    "description": "Capsules Codes",
+    "description": "Doom NativePHP",
     "license": "MIT",
     "require": {
-        "php": "^8.1.0",
-        "guzzlehttp/guzzle": "^7.7.0",
-        "inertiajs/inertia-laravel": "^0.6.9",
-        "laravel/framework": "^10.2.4",
-        "laravel/tinker": "^2.8.1",
-        "nativephp/electron": "^0.3.2"
+        "php": "^8.3.0",
+        "inertiajs/inertia-laravel": "^2.0.1",
+        "laravel/framework": "^11.43.2",
+        "nativephp/electron": "^1.0.0-beta.1"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.23.0",
-        "mockery/mockery": "^1.6.2",
-        "nunomaduro/collision": "^7.6.0",
-        "spatie/laravel-ignition": "^2.2.0"
+        "nunomaduro/collision": "^8.6.1"
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
+            "App\\": "app/"
         }
     },
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
-        ],
-        "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
-        ],
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
         ]
     },
     "extra": {

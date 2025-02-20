@@ -10,7 +10,7 @@
         "removeComments" : true,
         "skipLibCheck" : true,
         "strictNullChecks" : true,
-        "paths" : { "~/*" : [ "./resources/ts/*" ], "@/*" : [ "./*" ] }
+        "paths" : { "~/*" : [ "./resources/ts/*" ] }
     },
     "include" : [ "resources/ts/**/*", "storage/**/*" ],
     "exclude" : [ "node_modules/**/*", "vendor/**/*" ]

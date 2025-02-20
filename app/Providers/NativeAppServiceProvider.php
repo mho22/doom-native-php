@@ -3,20 +3,15 @@
 namespace App\Providers;
 
 use Native\Laravel\Facades\Window;
-use Native\Laravel\Menu\Menu;
+use Native\Laravel\Facades\Menu;
 
 
 class NativeAppServiceProvider
 {
-    public function boot(): void
+    public function boot() : void
     {
-        Menu::new()
-            ->subMenu( config( 'app.name' ), Menu::new()->quit() )
-            ->register();
+        Menu::create( Menu::make( Menu::devTools(), Menu::quit()->label( 'Quit Doom' ) )->label( config( 'app.name' ) ) );
 
-        Window::open()
-            ->width( 800 )
-            ->height( 500 )
-            ->titleBarHidden();
+        Window::open()->width( 800 )->height( 500 )->titleBarHidden()->showDevTools( false );
     }
 }

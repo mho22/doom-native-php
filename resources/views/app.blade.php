@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="{{ App::currentLocale() }}">
+<html>
 
     <head>
 

@@ -48,10 +48,3 @@ php artisan native:serve
 
 
 5. Kill some Cacodemon
-
-## Suggestions
-
-- Add more games [ Prince of Persia, The secret of Monkey Island ]
-- Change project name to PHP-DOS
-
-Don’t hesitate to give us some feed backs and suggestions to improve the project on the github repository or on twitter : [Capsules Codes](https://twitter.com/capsulescodes)
